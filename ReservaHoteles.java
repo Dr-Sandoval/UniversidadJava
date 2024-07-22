@@ -19,10 +19,12 @@ public class ReservaHoteles {
         System.out.println("");
 
         nombreCliente = "Maria Casanova";
+        edad = 42;
         diasEstadia = 20;
         vistaPanoramica = false;
 
         System.out.println("nombreCliente = " + nombreCliente);
+        System.out.println("edad = " + edad);
         System.out.println("diasEstadia = " + diasEstadia);
         System.out.println("TARIFA_DIARIA = " + TARIFA_DIARIA);
         System.out.println("vistaPanoramica = " + vistaPanoramica);
