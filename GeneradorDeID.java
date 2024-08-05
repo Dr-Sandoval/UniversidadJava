@@ -37,7 +37,7 @@ public class GeneradorDeID {
 
         //IMPRESION DEL MENSAJE DE SALIDA Y ENTREGA DE NUEVO ID UNICO
         System.out.printf("""
-                Hola %s,
+                %nHola %s,
                 \t Tú nuevo numero de identificacion (ID) generado por el sistema es:
                 \t %s
                 \t ¡FELICIDADES!
