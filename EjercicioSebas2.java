@@ -12,7 +12,7 @@ public class EjercicioSebas2 {
         //INVOCACION DE SCANNER 
         Scanner imputUsuario = new Scanner(System.in);
         
-        //CODIGO
+        //CODIGOS
         int numeroVocales = 0; 
         String vocalA = "a";
         String vocalE = "e";

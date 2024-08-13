@@ -7,7 +7,7 @@ public class EjercicioSebas1 {
 
          */
 
-        //CODIGO
+        //CODIGOS
 
         int numeroRecipiente = 0;
 
