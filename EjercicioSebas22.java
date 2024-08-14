@@ -1,17 +1,18 @@
 import java.util.Scanner;
 
-public class EjercicioSebas2 {
+public class EjercicioSebas22 {
     public static void main(String[] args) {
 
         /*
-        Ejercicio 2: Contando Vocales
+        Ejercicio 2.2: Contando Vocales
         Descripción: Escribe un programa que cuente cuántas vocales
         hay en una cadena de texto proporcionada por el usuario.
+        (RESUELTO CON ARRAY Y METODO SPLIT)
          */
 
-        //INVOCACION DE SCANNER 
+        //INVOCACION DE SCANNER
         Scanner imputUsuario = new Scanner(System.in);
-        
+
         //VARIABLES
         String vocalA = "a";
         String vocalE = "e";
@@ -31,6 +32,7 @@ public class EjercicioSebas2 {
         System.out.print("Ingresa una palabra aleatoria: ");
         String palabraRandom = imputUsuario.nextLine().toLowerCase();
         int longitudPalabra = palabraRandom.length();
+        String[] palabraSegmentada = palabraRandom.split("");
 
         System.out.println("La palabra aleatoria que elegiste fue = " + palabraRandom);
         System.out.println("La cantidad de letras de la palabra aleatoria es de: " + longitudPalabra);
@@ -40,23 +42,23 @@ public class EjercicioSebas2 {
         for (int i = 0; i < longitudPalabra; i++) {
 
 
-            if (palabraRandom.charAt(i) == vocalA.charAt(0)){
+            if (palabraSegmentada[i].equals(vocalA)){
 
                 letraA += 1;
 
-            }else if ((palabraRandom.charAt(i) == vocalE.charAt(0))){
+            } else if (palabraSegmentada[i].equals(vocalE)) {
 
                 letraE += 1;
 
-            } else if (palabraRandom.charAt(i) == vocalI.charAt(0)){
+            } else if (palabraSegmentada[i].equals(vocalI)) {
 
                 letraI += 1;
 
-            } else if (palabraRandom.charAt(i) == vocalO.charAt(0)) {
+            } else if (palabraSegmentada[i].equals(vocalO)) {
 
                 letraO += 1;
 
-            } else if (palabraRandom.charAt(i) == vocalU.charAt(0)) {
+            } else if (palabraSegmentada[i].equals(vocalU)) {
 
                 letraU += 1;
 
@@ -65,16 +67,15 @@ public class EjercicioSebas2 {
         }
 
         System.out.printf("""
-            La cantidad de vocales de la palabra %s son:  
-            
-            Vocal A = %d
-            Vocal E = %d
-            Vocal I = %d
-            Vocal O = %d
-            Vocal U = %d
-            
-            """, palabraRandom, letraA, letraE, letraI, letraO, letraU);
+                La cantidad de vocales de la palabra %s son:
+
+                Vocal A = %d
+                Vocal E = %d
+                Vocal I = %d
+                Vocal O = %d
+                Vocal U = %d
+
+                """, palabraRandom, letraA, letraE, letraI, letraO, letraU);
 
     }
-
 }
