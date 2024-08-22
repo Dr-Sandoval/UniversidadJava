@@ -18,6 +18,7 @@ public class MultiploNumeros {
         for (int i = 1; i < 1000; i++) {
             if (i % numeroUsuario == 0){
                 contadorDeMultiplos++;
+                git statu
             }
         }
 
