@@ -21,10 +21,16 @@ public class InversionDeCadenas {
         int numeroDeCaracteres = palabraRandom.length();
         String[] cadenaInversa = palabraRandom.split("");
         System.out.println("numeroDeCaracteres = " + numeroDeCaracteres);
+<<<<<<< HEAD
         String palabra = "";
 
         for (int i = numeroDeCaracteres - 1 ; i >= 0 ; i--) {
             palabra = palabra + cadenaInversa [i];
+=======
+
+        for (int i = numeroDeCaracteres - 1 ; i >= 0 ; i--) {
+            String palabra = cadenaInversa[i] + cadenaInversa[i] + cadenaInversa[i] + cadenaInversa [i];
+>>>>>>> 525ab8c60903b47e3590bc38c94a3f1388aa4d54
             System.out.println("palabra = " + palabra);
 
 
